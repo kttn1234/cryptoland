@@ -1,15 +1,15 @@
 $(document).ready(function () {
   // menu
-  $(".header__toggles").click(function (event) {
+  $(".header__toggle").click(function (event) {
     $("body").toggleClass("js__menu-open");
   });
 
   $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
     if (scrollTop > $(".works").offset().top) {
-      $(".header__toggles").addClass("header__toggles--black");
+      $(".header__toggle").addClass("header__toggle--black");
     } else {
-      $(".header__toggles").removeClass("header__toggles--black");
+      $(".header__toggle").removeClass("header__toggle--black");
     }
   });
   $(".header__lang .header__lang-select a").click(function() {

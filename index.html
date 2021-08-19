@@ -25,6 +25,7 @@
         <h1 class="header__logo">
           <a class="trans" href="/"><img src="/images/common/logo_header.png" alt="Cryptoland"></a>
         </h1>
+        <div class="header__toggle"><span></span><span></span><span></span></div>
         <nav class="header__navigation">
           <ul class="header__menu">
             <li><a class="trans" href="#">About</a></li>
@@ -36,8 +37,24 @@
             <li><a class="trans" href="#">Team</a></li>
             <li><a class="trans" href="#">FAQ</a></li>
           </ul>
-        </nav>
-        <div class="header__tools">
+          <div class="header__tools">
+            <a class="trans header__send" href="/"><img src="/images/common/icon_send.png" alt="mail"></a>
+            <div class="header__lang">
+              <div class="header__lang-select">
+                <a href="#">En</a>
+              </div>
+              <div class="header__lang-options">
+                <ul>
+                  <li><a href="#">En</a></li>
+                  <li><a href="#">Vn</a></li>
+                  <li><a href="#">Jp</a></li>
+                </ul>
+              </div>
+            </div>
+            <a class="trans header__join" href="/">Join Cryptoland ICO</a>
+          </div>
+        </nav> 
+        <div class="header__tools hidden-menu">
           <a class="trans header__send" href="/"><img src="/images/common/icon_send.png" alt="mail"></a>
           <div class="header__lang">
             <div class="header__lang-select">
@@ -60,7 +77,7 @@
     <i class="promo__icon-01 icon-circle"></i>
     <i class="promo__icon-02 icon-circle"></i>
     <div class="wrapper">
-      <h2 class="promo__title">Cryptoland Just Entered <span>the Real World</span></h2>
+      <h2 class="promo__title">Cryptoland Just Entered<br class="tab"> <span>the Real World</span></h2>
       <p class="promo__text">Archerfish pipefish mora silver hake lumpsucker perch black dragonfish California <br>smoothtongue. Poacher golden trout Atlantic cod medaka sandfish scat goby arapaima taimen trout cod. </p>
       <ul class="promo__time">
         <li class="promo__time-item">
@@ -866,7 +883,11 @@
         
         <div class="footer__subscribe">
           <p class="footer__title">Subscribe</p>
-          <input type="email" placeholder="Email" name="email" required class="input-style" />
+          <form action="" class="form form--subscribe">
+            <input type="email" placeholder="Email" name="email" required class="input-style" />
+            <button class="form__button trans">Send</button>
+          </form>
+          
         </div>
       </div>
     </div>
